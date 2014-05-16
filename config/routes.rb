@@ -1,4 +1,6 @@
 Recipereminder::Application.routes.draw do
+  resources :recipes
+
   resources :user_recipes
 
   devise_for :users

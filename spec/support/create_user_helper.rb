@@ -1,5 +1,6 @@
 module CreateUserHelper
   def register_user(user)
+    visit new_user_registration_path
     fill_in :user_first_name, :with => user.first_name
     fill_in :user_last_name, :with => user.last_name
     fill_in :user_email, :with => user.email
